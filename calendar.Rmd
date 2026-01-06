@@ -1,0 +1,200 @@
+---
+title: "STAT 550 Course Calendar"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+  pdf_document:
+    toc: false
+    toc_depth: '2'
+---
+
+# Week 1: Jan 13, 15
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 2: Jan 20, 22
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 3: Jan 27, 29
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 4: Feb 3, 5
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 5: Jan 10, 12
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 6: Feb 17, 19
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 7: Feb 24, 26
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 8: Mar 3, 5
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 9: Mar 10, 12
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Spring break: Mar 16-20
+
+---
+
+# Week 10: Mar 24, 26
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 11: Mar 31, Apr 2
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 12: Apr 7, 9
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 13: Apr 14, 16
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 14: Apr 21, 23
+
+#### _Tuesday_
+
+* TBD
+
+#### _Thursday_ 
+
+* TBD
+
+---
+
+# Week 15: Apr 28, 30
+
+#### _Tuesday_
+
+* Project presentations
+
+#### _Thursday_ 
+
+* Project presentations
+
+
+---
+
+# Finals week
+
+* Final exam in Wilson Hall 1-128 on **Tuesday, May 5, 8:00am-9:50am**

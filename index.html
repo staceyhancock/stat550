@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.knit</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STAT 550</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="calendar.html">Calendar</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:&lt;stacey.hancock@montana.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/staceyhancock/stat550">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><div class="line-block">STAT 550<br />
+Advanced Mathematical Statistics</div></h1>
+<h3 class="subtitle">Spring 2026 Syllabus</h3>
+
+</div>
+
+
+<div id="course-calendar-and-content" class="section level1">
+<h1>Course calendar and content</h1>
+<p>See our <a href="calendar.html">course calendar</a> for course
+deadlines and material covered each week. Course content will be
+available in our <a href="https://www.montana.edu/ecat/">Canvas</a>
+page.</p>
+<hr />
+</div>
+<div id="course-description-and-learning-outcomes"
+class="section level1">
+<h1>Course description and learning outcomes</h1>
+<p>STAT 550 is a course in the theory of advanced mathematical
+statistics, examining topics such as sufficiency, completeness,
+ancillary statistics, invariance, likelihood-based inference, large
+sample theory, and Edgeworth and saddlepoint approximations. By the end
+of this course, the successful student should be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Use rigorous mathematical techniques to derive mathematical
+statistics results, including construction of hypothesis tests and
+confidence intervals,<br />
+</li>
+<li>Describe and program optimization algorithms used in
+estimation,<br />
+</li>
+<li>Compare and contrast different statistical inference approaches
+based on principles of mathematical statistics,<br />
+</li>
+<li>Derive asymptotic distributions and properties of statistics,
+and</li>
+<li>Communicate summaries of journal articles on mathematical statistics
+topics, both written and oral.</li>
+</ol>
+<hr />
+</div>
+<div id="time-and-location" class="section level1">
+<h1>Time and location</h1>
+<p>Tue/Thur 9:25am-10:40am Wilson Hall 1-128</p>
+<hr />
+</div>
+<div id="instructor-contact-information"
+class="section level1 unnumbered">
+<h1 class="unnumbered">Instructor contact information</h1>
+<p><a href="http://www.math.montana.edu/shancock/"
+target="_blank"><strong>Dr. Stacey Hancock</strong></a><br />
+email: <a href="mailto:stacey.hancock@montana.edu"
+class="email">stacey.hancock@montana.edu</a><br />
+Office: Wilson 2-195<br />
+Phone: (406) 993-5350</p>
+<p><em>Office hours</em>:</p>
+<ul>
+<li>Monday 1-2pm</li>
+<li>Tuesday 11am-12pm</li>
+<li>Thursday 11am-12pm</li>
+<li>Also available by appointment.</li>
+</ul>
+<hr />
+</div>
+<div id="prerequisites" class="section level1">
+<h1>Prerequisites</h1>
+<p>STAT 502 and either M 384, M 505, M547 or equivalent. This course
+assumes working knowledge of linear algebra, multivariate calculus,
+infinite series, and methods of proof.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="course-materials" class="section level1">
+<h1>Course materials</h1>
+<div id="textbook" class="section level3">
+<h3>Textbook</h3>
+<p>The required textbooks for the course are available in pdf form in
+our Canvas page:</p>
+<ul>
+<li>Robert J. Boik’s STAT 550 Lecture Notes</li>
+<li>Robert J. Boik’s STAT 505 Lecture Notes</li>
+</ul>
+<p>Journal articles and chapters from various books will also be used.
+See the beginning of the STAT 550 Lecture Notes for a course
+outline.</p>
+<p>You will be allowed to use these textbooks on each quiz/exam, but not
+electronically, so please <em>print a copy of the relevant textbook
+pages</em> to use for each quiz/exam. I recommend purchasing a
+three-ring binder for the printed pages, or have the textbooks printed
+and spiral bound at a local printing shop.</p>
+</div>
+<div id="statistical-computing" class="section level3">
+<h3>Statistical computing</h3>
+<p>We will be using the statistical software <a
+href="https://www.r-project.org/">R</a> through the IDE <a
+href="https://posit.co/downloads/">RStudio</a>. I will assume basic
+familiarity with this programming language. Students have four options
+for accessing this free software:</p>
+<ol style="list-style-type: decimal">
+<li><p>Download to your own laptop. (Note R and RStudio will not run on
+iPad, notebooks, or Chromebooks. If you have one of these devices, see
+the cloud-based option below.)</p>
+<ul>
+<li>Download and install <a
+href="https://cloud.r-project.org/">R</a>.</li>
+<li>Download and install <a href="https://posit.co/downloads/">RStudio
+Desktop</a>.</li>
+</ul></li>
+<li><p>Use RStudio through the <a href="https://posit.cloud/">Posit
+Cloud</a>. This resource allows you to use RStudio through a web
+browser. It is free for use, but it does limit you to a certain number
+of project hours per month.</p></li>
+<li><p>Use RStudio through an MSU <a
+href="https://studentlabs.montana.edu/remotelabs/howto.html">virtual
+machine</a>.</p></li>
+<li><p>Use RStudio in an MSU on-campus computer lab.</p></li>
+</ol>
+</div>
+<div id="learning-management" class="section level3">
+<h3>Learning management</h3>
+<ul>
+<li><a href="https://www.montana.edu/ecat/"><strong>Canvas</strong></a>:
+Announcements, gradebook, discussion forums.
+<ul>
+<li><em>Important</em>: Make sure you are receiving email notifications
+for any Canvas activity. In Canvas, click Account on the top left, then
+Notifications. Check that Canvas is using an email address that you
+regularly check (if not, change your Canvas Contact email by clicking on
+Account, then Settings). Check the boxes to get notifications for Course
+Content, Files, Announcement, Grading, and Discussions.</li>
+<li>If you have a question about the course materials, computing, or
+logistics, please post your question to your <strong>Canvas discussion
+board</strong> instead of emailing your instructor. This ensures all
+students can benefit from the responses. Other students are encouraged
+to respond.</li>
+</ul></li>
+<li>We will not be using a learning management system for homework and
+quizzes; homework and quizzes will be turned in at the beginning of
+class, and graded homeworks/quizzes will be either returned in class or
+in your department mailbox.</li>
+</ul>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+</div>
+<div id="course-expectations" class="section level1">
+<h1>Course expectations</h1>
+<p>In this course, you are expected to have professional behavior. You
+are expected to attend all class meetings on time, be curious, ask
+questions, seek opportunities to learn, and be open and responsive to
+constructive feedback. In addition:</p>
+<ul>
+<li>Be an active participant—statistics is not a spectator sport!</li>
+<li>Be committed, take your work seriously.</li>
+<li>Engage with the in-class activities and homework sets.</li>
+<li>Help others—if you understand the material being discussed, practice
+your mentoring skills. This does not mean sharing answers, but instead
+helping others understand the concepts.</li>
+<li>Complete assigned readings and read your textbooks.</li>
+</ul>
+<p>You are also expected to exhibit a professional demeanor (language,
+attitude) toward others. Disagreement during discussions is welcome and
+often productive in developing a deeper understanding of the concepts
+being discussed. However, disagreement in a discussion does not warrant
+yelling or disrespectful language or behavior. Unprofessional behavior
+that impedes on other students’ opportunity to learn will not be
+tolerated, and appropriate actions will be taken to prevent future
+occurrences. Anyone causing minor disturbances (e.g., cell phone usage
+or ringing) will be expected to bring treats for everyone else to the
+next class meeting.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="course-assessment" class="section level1">
+<h1>Course assessment</h1>
+<p>Your grade in STAT 550 will contain the following components.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="75%" /></p>
+<ol style="list-style-type: decimal">
+<li><strong>Homework</strong> (10%): The only way to learn probability
+and statistics is to practice working and re-working problems, and
+homework is therefore an essential part of the course.
+<ul>
+<li>Homework will be assigned approximately weekly.</li>
+<li>Homework problems are graded as P, F, or re-do. Re-do problems must
+be completed within one week after graded homework is returned. <em>Your
+original homework must be turned in with your re-do work.</em></li>
+<li>Late homework should be avoided in all but the most dire
+emergencies. In the event of extreme circumstances, other arrangements
+will be considered if prior notification is provided.</li>
+<li>See <a href="#policy">the policy on collaboration and academic
+misconduct</a> section for guidance with regards to collaboration on
+homework assignments.</li>
+<li>All but one homework must be passed by the last day of classes to
+earn a passing grade in STAT 550 (that is, one homework may be
+dropped).</li>
+</ul></li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Quizzes</strong> (50%): In-class quizzes (~40 min) will
+occur approximately every three weeks.
+<ul>
+<li>Quizzes are open book and open notes, but the textbook and notes
+must be printed. (No electronic devices allowed).</li>
+<li>The lowest quiz score will be dropped.</li>
+</ul></li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Project</strong> (15%): Each student will dive into one
+mathematical statistics journal article of your choice this semester.
+The project will include a two-page “executive summary”, a proof sketch
+of one of the derivations in the article, and an 8-10 minute
+presentation of the article. Detailed project instructions and deadlines
+will be available in Canvas.</li>
+</ol>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Final exam</strong> (30%): Our final exam will be on
+<strong>Tuesday, May 5, 8:00am-9:50am</strong> in our same
+classroom.</li>
+</ol>
+<p>Letter grades generally follow the typical scale:</p>
+<p>93-100 = A<br />
+90-92 = A-<br />
+88-89 = B+<br />
+83-87 = B<br />
+80-82 = B-<br />
+etc.</p>
+<p>These cutoffs may be adjusted down (never up!) at the end of the
+semester, depending on the grade distribution in the course. Thus, a 93%
+will guarantee an A, a 90% will guarantee an A-, etc.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="diversity-and-inclusivity-statements" class="section level1">
+<h1>Diversity and inclusivity statements</h1>
+<p><strong>Respect for Diversity</strong>: It is our intent that
+students from all diverse backgrounds and perspectives be well-served by
+this course, that students’ learning needs be addressed both in and out
+of class, and that the diversity that students bring to this class be
+viewed as a resource, strength and benefit. It is our intent to present
+materials and activities that are respectful of diversity: gender
+identity, sexual orientation, disability, age, socioeconomic status,
+ethnicity, race, religion, culture, perspective, and other background
+characteristics. Your suggestions about how to improve the value of
+diversity in this course are encouraged and appreciated. Please let us
+know ways to improve the effectiveness of the course for you personally
+or for other students or student groups.</p>
+<p>In addition, in scheduling exams, we have attempted to avoid
+conflicts with major religious holidays. If, however, we have
+inadvertently scheduled an exam or major deadline that creates a
+conflict with your religious observances, please let us know as soon as
+possible so that we can make other arrangements.</p>
+<p><strong>Support for Inclusivity</strong>: We support an inclusive
+learning environment where diversity and individual differences are
+understood, respected, appreciated, and recognized as a source of
+strength. We expect that students, faculty, administrators and staff at
+MSU will respect differences and demonstrate diligence in understanding
+how other peoples’ perspectives, behaviors, and worldviews may be
+different from their own.</p>
+<p><a href="#top">Back to top</a></p>
+<hr />
+</div>
+<div id="ai" class="section level1">
+<h1>Policy on the use of generative AI</h1>
+<p>This class will strive to create an environment that fosters
+learning, critical thinking, and effective communication. To achieve
+these goals, I have decided to prohibit the use of ChatGPT or similar
+tools during this course, with the exception of assistance in writing
+computer code.</p>
+<p>While ChatGPT and other language models can be powerful and useful
+tools in certain contexts, I believe that relying on them for this
+course undermines the learning objectives. I want you to develop your
+skills in independent thinking, problem-solving, and engagement with the
+subject matter. By restricting the use of AI language models to help
+with coding only, you will utilize your knowledge, creativity, and
+critical analysis to complete your assignments and actively participate
+in class discussions.</p>
+<p>I understand that technology plays an increasingly prominent role in
+various aspects of our lives, and I acknowledge its potential benefits.
+However, in the context of this course, I believe that relying on
+personal effort and intellectual exploration will enhance your learning
+experience and contribute to your long-term development as a
+knowledgeable and well-rounded individual.</p>
+<p>It is important to note that this requirement applies to all aspects
+of the course, including assignments, exams, and any form of
+communication related to the course content. Any use of AI language
+models, including ChatGPT, during these activities, outside of
+appropriate use to aid in computer coding, will be considered a
+violation of the student code of conduct.</p>
+<p>Should you have any questions or concerns regarding this course
+expectation, please feel free to discuss them with me. I am here to
+support and guide you throughout this educational journey.</p>
+<p><em>The wording above was adapted from MSU’s guidance on <a
+href="https://www.montana.edu/facultyexcellence/teaching-advising/courseclassdesign/genai/expectations.html">establishing
+expectations, syllabus language, and policies for generative AI
+use</a>.</em></p>
+</div>
+<div id="policy" class="section level1">
+<h1>Policy on collaboration and academic misconduct</h1>
+<p>At a minimum, any act of academic dishonesty, which includes but is
+not limited to plagiarism, cheating, multiple submissions, or
+facilitating others’ misconduct, will result in a score of zero on the
+assignment/quiz/exam in question and notification of department and
+university officials. Further action may be taken as warranted. If you
+have any questions about the limits of collaboration or about using and
+citing sources, you are expected to ask for clarification.</p>
+<div id="homework" class="section level3">
+<h3>Homework</h3>
+<p><em>After attempting to complete homework problems on your own</em>,
+you are permitted to collaborate on homework in a constructive manner
+for all involved—each individual in the collaboration needs to ensure
+they understand and could explain the process of solving each problem.
+While I encourage you to talk through problems with fellow students, the
+work you turn in must be your own and must be written in your own words
+(unless the assignment specifically states otherwise).</p>
+<p><strong>Each homework will you to cite all sources (including web
+forums such as Stack Overflow, Google searches, and AI (for coding
+questions only)) and individuals used to complete that homework
+assignment.</strong> Paraphrasing or quoting another’s work without
+citing the source is a form of academic dishonesty. Even inadvertent or
+unintentional misuse or appropriation of another’s work (such as relying
+heavily on source material that is not expressly acknowledged) is
+considered plagiarism. Homework assignments that do not cite sources or
+individuals, or assignments where answers are copied directly from
+another student, will be considered and treated as plagiarism, and will
+receive a zero grade. If you have any questions about the limits of
+collaboration or about using and citing sources, you are expected to ask
+for clarification.</p>
+</div>
+<div id="msu-policy" class="section level3">
+<h3>MSU policy</h3>
+<p>Students in an academic setting are responsible for approaching all
+assignments with rigor, integrity, and in compliance with the University
+Code of Student Conduct. This responsibility includes:</p>
+<ol style="list-style-type: decimal">
+<li>consulting and analyzing sources that are relevant to the topic of
+inquiry;</li>
+<li>clearly acknowledging when they draw from the ideas or the phrasing
+of those sources in their own writing;</li>
+<li>learning and using appropriate citation conventions within the field
+in which they are studying; and</li>
+<li>asking their instructor for guidance when they are uncertain of how
+to acknowledge the contributions of others in their thinking and
+writing.</li>
+</ol>
+<p><a
+href="https://www.montana.edu/deanofstudents/our-programs/student-conduct/index.html">More
+information about Student Conduct from the Dean of Students</a></p>
+<p><a href="#top">Back to top</a></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
