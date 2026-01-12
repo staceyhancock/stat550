@@ -10,27 +10,48 @@ output:
     toc_depth: '2'
 ---
 
+Homework assignments, project instructions, lecture notes and handouts will be posted in Canvas. Readings will be denoted by "550" for the _Course Notes: Statistics 550 Advanced Mathematical Statistics_ and by "505" for _A Pair of Primers: Primer on Matrix Analysis and Primer on Linear Statistical Models_. 
+
 # Week 1: Jan 13, 15
+
+__Reading__:  
+
+* Course syllabus and Canvas exploration
+* 505: Chapters 2, 7-8
+* 550: Chapter 2
+
 
 #### _Tuesday_
 
-* TBD
+* Introductions to the course and to each other
+* [Spot the math errors](https://skullsinthestars.com/2008/12/12/spot-the-math-errors/)
+* Deep dive into matrix algebra
+
 
 #### _Thursday_ 
 
-* TBD
+* Kronecker products and the vec operator
 
 ---
 
 # Week 2: Jan 20, 22
 
+__Reading__:  
+
+* 505: Chapter 9
+* 550: Chapter 3
+
+
+
 #### _Tuesday_
 
-* TBD
+* Matrix differentiation
 
 #### _Thursday_ 
 
-* TBD
+* Matrix differentiation (cont)
+* Eigenvalue/eigenvector review
+* **Homework 1 Due in class**
 
 ---
 
