@@ -10,14 +10,14 @@ output:
     toc_depth: '2'
 ---
 
-Homework assignments, project instructions, lecture notes and handouts will be posted in Canvas. Readings will be denoted by "550" for the _Course Notes: Statistics 550 Advanced Mathematical Statistics_ and by "505" for _A Pair of Primers: Primer on Matrix Analysis and Primer on Linear Statistical Models_. 
+Homework assignments, project instructions, lecture notes and handouts will be posted in Canvas. Readings will be denoted by "550" for the _Course Notes: Statistics 550 Advanced Mathematical Statistics_ and by "505" for _A Pair of Primers: Primer on Matrix Analysis and Primer on Linear Statistical Models_. Topics on calendar are subject to change.
 
 # Week 1: Jan 13, 15
 
 __Reading__:  
 
 * Course syllabus and Canvas exploration
-* 505: Chapters 2, 7-8
+* 505: Chapters 2 and 7, Sections 8.1-8.4 and 8.11
 * 550: Chapter 2
 
 
@@ -38,13 +38,14 @@ __Reading__:
 
 __Reading__:  
 
-* 505: Chapter 9
+* 505: Chapters 9 and 12
 * 550: Chapter 3
 
 
 
 #### _Tuesday_
 
+* Kronecker products and the vec operator (cont)
 * Matrix differentiation
 
 #### _Thursday_ 
@@ -57,13 +58,21 @@ __Reading__:
 
 # Week 3: Jan 27, 29
 
+__Reading__:  
+
+* 505: Chapters 9 and 12
+* 550: Chapter 3
+* Sections 5.5.1-5.5.3 in Casella and Berger
+
 #### _Tuesday_
 
-* TBD
+* Eigenvalue/eigenvector (cont)
+* Order of magnitude
 
 #### _Thursday_ 
 
-* TBD
+* Types of convergence in probability 
+* Order of magnitude in probability
 
 ---
 
@@ -71,11 +80,12 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* Multivariate Taylor series expansions
+* Newton-Raphson and Fisher Scoring algorithms
 
 #### _Thursday_ 
 
-* TBD
+* Newton-Raphson and Fisher Scoring algorithms for logistic regression
 
 ---
 
@@ -83,11 +93,11 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* Missing data and the EM algorithm
 
 #### _Thursday_ 
 
-* TBD
+* Missing data and the EM algorithm
 
 ---
 

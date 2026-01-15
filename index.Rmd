@@ -177,7 +177,7 @@ grades %>% ggplot(aes(x=location, y=percent)) +
 
 \vspace{10mm}
 
-3. **Project** (15%): Each student will dive into one mathematical statistics journal article of your choice this semester. The project will include a two-page "executive summary", a proof sketch of one of the derivations in the article, and an 8-10 minute presentation of the article. Detailed project instructions and deadlines will be available in Canvas.
+3. **Project** (15%): Each student will dive into one mathematical statistics journal article of your choice this semester. The project will include a written "executive summary", a proof sketch of one of the derivations in the article, and an 10-12 minute presentation of the article during the last week of classes. Detailed project instructions and deadlines will be available in Canvas.
 
 \vspace{10mm}
 
