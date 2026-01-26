@@ -36,22 +36,14 @@ __Reading__:
 
 # Week 2: Jan 20, 22
 
-__Reading__:  
-
-* 505: Chapters 9 and 12
-* 550: Chapter 3
-
-
-
 #### _Tuesday_
 
 * Kronecker products and the vec operator (cont)
-* Matrix differentiation
+
 
 #### _Thursday_ 
 
-* Matrix differentiation (cont)
-* Eigenvalue/eigenvector review
+* Application of matrix operations in linear models 
 * **Homework 1 Due in class**
 
 ---
@@ -66,34 +58,50 @@ __Reading__:
 
 #### _Tuesday_
 
-* Eigenvalue/eigenvector (cont)
-* Order of magnitude
+* Matrix differentiation
 
 #### _Thursday_ 
 
-* Types of convergence in probability 
-* Order of magnitude in probability
+* Matrix differentiation (cont)
+* Eigenvalue/eigenvector review
+* **Quiz 1: Matrix operations, Kronecker products, Vec**
 
 ---
 
 # Week 4: Feb 3, 5
 
+__Reading__:  
+
+* 505: Sections 13.1-13.4
+* 550: Chapters 4 and 5, Sections 7.1-7.4
+* Sections 5.5.1-5.5.3 in Casella and Berger
+
+
 #### _Tuesday_
 
-* Multivariate Taylor series expansions
-* Newton-Raphson and Fisher Scoring algorithms
+* Order of magnitude
+* Types of convergence in probability 
+* Order of magnitude in probability
+* **Homework 2 Due in class**
+
 
 #### _Thursday_ 
 
-* Newton-Raphson and Fisher Scoring algorithms for logistic regression
+* Multivariate Taylor series expansions
+* Newton-Raphson and Fisher Scoring algorithms
 
 ---
 
 # Week 5: Jan 10, 12
 
+__Reading__:  
+
+* 550: Sections 7.5-7.6
+
+
 #### _Tuesday_
 
-* Missing data and the EM algorithm
+* Newton-Raphson and Fisher Scoring algorithms for logistic regression
 
 #### _Thursday_ 
 
@@ -105,7 +113,8 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* Missing data and the EM algorithm (cont)
+
 
 #### _Thursday_ 
 
@@ -117,7 +126,7 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* **Project: Journal article proposal due in Canvas by 5pm**
 
 #### _Thursday_ 
 
@@ -169,7 +178,7 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* **Project: Executive summary due in Canvas by 5pm**
 
 #### _Thursday_ 
 
@@ -193,7 +202,7 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* **Project: Proof sketch due in Canvas by 5pm**
 
 #### _Thursday_ 
 
@@ -214,6 +223,9 @@ __Reading__:
 ---
 
 # Week 15: Apr 28, 30
+
+**Project: Presentation slides due in Canvas by 5pm on _Monday_**
+
 
 #### _Tuesday_
 
