@@ -52,9 +52,8 @@ __Reading__:
 
 __Reading__:  
 
-* 505: Chapters 9 and 12
+* 505: Chapter 12
 * 550: Chapter 3
-* Sections 5.5.1-5.5.3 in Casella and Berger
 
 #### _Tuesday_
 
@@ -63,7 +62,6 @@ __Reading__:
 #### _Thursday_ 
 
 * Matrix differentiation (cont)
-* Eigenvalue/eigenvector review
 * **Quiz 1: Matrix operations, Kronecker products, Vec**
 
 ---
@@ -72,23 +70,21 @@ __Reading__:
 
 __Reading__:  
 
-* 505: Sections 13.1-13.4
-* 550: Chapters 4 and 5, Sections 7.1-7.4
-* Sections 5.5.1-5.5.3 in Casella and Berger
+* 505: Chapter 9, Chapter 11 (skim), Section 15.1
+* 550: Chapter 5
 
 
 #### _Tuesday_
 
-* Order of magnitude
-* Types of convergence in probability 
-* Order of magnitude in probability
-* **Homework 2 Due in class**
+* Matrix differentiation (cont)
+* Minimizing SSE from a projection operator perspective
 
 
 #### _Thursday_ 
 
-* Multivariate Taylor series expansions
-* Newton-Raphson and Fisher Scoring algorithms
+* Eigenvalue/eigenvector review
+* Order of magnitude
+* **Homework 2 Due in class**
 
 ---
 
@@ -96,16 +92,21 @@ __Reading__:
 
 __Reading__:  
 
-* 550: Sections 7.5-7.6
+* 505: Sections 13.1-13.4
+* 550: Chapters 4 and 7
+* Sections 5.5.1-5.5.3 in Casella and Berger
 
 
 #### _Tuesday_
 
-* Newton-Raphson and Fisher Scoring algorithms for logistic regression
+* Types of convergence in probability 
+* Order of magnitude in probability
 
 #### _Thursday_ 
 
-* Missing data and the EM algorithm
+* Multivariate Taylor series expansions
+* Newton-Raphson and Fisher Scoring algorithms
+* **Quiz 2: Matrix differentiation and matrix representation of linear models**
 
 ---
 
@@ -113,12 +114,12 @@ __Reading__:
 
 #### _Tuesday_
 
-* Missing data and the EM algorithm (cont)
+* Newton-Raphson and Fisher Scoring algorithms for logistic regression
 
 
 #### _Thursday_ 
 
-* TBD
+* Missing data and the EM algorithm
 
 ---
 
@@ -126,11 +127,12 @@ __Reading__:
 
 #### _Tuesday_
 
+* _No class_: Either attend the CLS Teaching Workshop with Dr. James Lang (registration required) or spend this time working on your project.
 * **Project: Journal article proposal due in Canvas by 5pm**
 
 #### _Thursday_ 
 
-* TBD
+* Missing data and the EM algorithm (cont)
 
 ---
 
