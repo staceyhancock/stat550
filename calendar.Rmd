@@ -83,7 +83,6 @@ __Reading__:
 #### _Thursday_ 
 
 * Eigenvalue/eigenvector review
-* Order of magnitude
 * **Homework 2 Due in class**
 
 ---
@@ -99,13 +98,11 @@ __Reading__:
 
 #### _Tuesday_
 
-* Types of convergence in probability 
-* Order of magnitude in probability
+* Eigenvalue/eigenvector review (cont)
 
 #### _Thursday_ 
 
-* Multivariate Taylor series expansions
-* Newton-Raphson and Fisher Scoring algorithms
+* Order of magnitude
 * **Quiz 2: Matrix differentiation and matrix representation of linear models**
 
 ---
@@ -114,12 +111,13 @@ __Reading__:
 
 #### _Tuesday_
 
-* Newton-Raphson and Fisher Scoring algorithms for logistic regression
+* Order of magnitude (cont)
 
 
 #### _Thursday_ 
 
-* Missing data and the EM algorithm
+* Types of convergence in probability 
+* Order of magnitude in probability
 
 ---
 
@@ -132,7 +130,9 @@ __Reading__:
 
 #### _Thursday_ 
 
-* Missing data and the EM algorithm (cont)
+* Order of magnitude in probability (cont)
+* Multivariate Taylor series expansions
+* **Homework 3 Due in class**
 
 ---
 
@@ -140,11 +140,11 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* Newton-Raphson and Fisher Scoring algorithms
 
 #### _Thursday_ 
 
-* TBD
+* Newton-Raphson and Fisher Scoring algorithms for logistic regression
 
 ---
 
@@ -152,11 +152,11 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* Missing data and the EM algorithm
 
 #### _Thursday_ 
 
-* TBD
+* Missing data and the EM algorithm (cont)
 
 ---
 
