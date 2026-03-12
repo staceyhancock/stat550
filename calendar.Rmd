@@ -153,13 +153,12 @@ __Reading__:
 #### _Tuesday_
 
 * Newton-Raphson and Fisher Scoring algorithms for logistic regression (cont)
-* **Quiz 3: Eigenvalues and eigenvectors, Order of convergence**
 
 
 #### _Thursday_ 
 
 * Missing data and the EM algorithm
-* **Homework 4 Due in class**
+* **Quiz 3: Eigenvalues and eigenvectors, Order of convergence**
 
 
 ---
@@ -173,11 +172,11 @@ __Reading__:
 #### _Tuesday_
 
 * Missing data and the EM algorithm (cont)
+* **Homework 4 Due in class**
 
 #### _Thursday_ 
 
 * Missing data and the EM algorithm (cont)
-* **Quiz 4: Taylor series approximations, Newton-Raphson/Fisher scoring algorithms**
 
 
 ---
@@ -187,10 +186,11 @@ __Reading__:
 #### _Tuesday_
 
 * **Project: Executive summary due in Canvas by 5pm**
+* **Quiz 4: Taylor series approximations, Newton-Raphson/Fisher scoring algorithms**
 
 #### _Thursday_ 
 
-* TBD
+* **Homework 5 Due in class**
 
 ---
 
