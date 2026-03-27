@@ -185,12 +185,12 @@ __Reading__:
 
 #### _Tuesday_
 
-* **Project: Executive summary due in Canvas by 5pm**
-* **Quiz 4: Taylor series approximations, Newton-Raphson/Fisher scoring algorithms**
+* Missing data and the EM algorithm (cont)
 
 #### _Thursday_ 
 
-* **Homework 5 Due in class**
+* Generalized least squares and generalized estimating equations
+* **Quiz 4: Taylor series approximations, Newton-Raphson/Fisher scoring algorithms**
 
 ---
 
@@ -198,7 +198,8 @@ __Reading__:
 
 #### _Tuesday_
 
-* TBD
+* **Homework 5 Due in class**
+* **Project: Executive summary due in Canvas by 5pm**
 
 #### _Thursday_ 
 
